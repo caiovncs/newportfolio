@@ -7,7 +7,7 @@ export function HeaderMain() {
   return (
     <HeaderMainContainer>
       <div className="container">
-        <img src={logo} />
+        <img src={logo} alt="logo" />
 
         <NavContainer>
           <RegularText as="a" href="#" color="nav-color">

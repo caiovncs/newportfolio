@@ -1,4 +1,3 @@
-// import { ReactNode } from 'react'
 import { SkillCardContainer } from './styles'
 import { RegularText } from '../../../../../components/Typography'
 
@@ -17,7 +16,7 @@ export function SkillCard({ name, image, description }: SkillCardProps) {
       <RegularText size="s" color="gray">
         {description}
       </RegularText>
-      <img src={`../../../../../assets/TechsImages/${image}`} alt={image} />
+      <img src={`src/assets/TechsImages/${image}`} alt={image} />
     </SkillCardContainer>
   )
 }

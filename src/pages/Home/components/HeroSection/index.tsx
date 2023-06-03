@@ -1,4 +1,4 @@
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowRight } from '@phosphor-icons/react'
 import { Button } from '../../../../components/Button'
 import { RegularText, TitleText } from '../../../../components/Typography'
 import { HeroSectionContainer } from './styles'
@@ -19,7 +19,7 @@ export function HeroSection() {
         </RegularText>
         <Button>
           Entrar em contato
-          <ArrowUpRight size={16} />
+          <ArrowRight size={16} />
         </Button>
       </div>
     </HeroSectionContainer>

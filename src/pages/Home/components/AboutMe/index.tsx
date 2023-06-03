@@ -1,12 +1,12 @@
 import { RegularText, TitleText } from '../../../../components/Typography'
 import { AboutMeContainer, TextsAbout } from './styles'
-import card from '../../../../assets/card.svg'
+import card from '../../../../assets/card.png'
 import { Button } from '../../../../components/Button'
 import { DownloadSimple } from '@phosphor-icons/react'
 
 export function AboutMe() {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer id="sobre">
       <div className="container">
         <TextsAbout>
           <TitleText size="l" color="black">
@@ -20,12 +20,12 @@ export function AboutMe() {
             área e atualmente minhas experiências se resumem a projetos de
             estudo. No momento meu foco é me especializar em React e Typescript.
           </RegularText>
-          <Button>
+          <Button downloadPdf>
             Baixar CV
             <DownloadSimple size={18} />
           </Button>
         </TextsAbout>
-        <img src={card} />
+        <img src={card} alt="card com informações pessoais" />
       </div>
     </AboutMeContainer>
   )

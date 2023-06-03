@@ -1,3 +1,5 @@
+import { ContactContainer } from './styles'
+
 export function Contact() {
-  return <div>ctt</div>
+  return <ContactContainer>ctt</ContactContainer>
 }

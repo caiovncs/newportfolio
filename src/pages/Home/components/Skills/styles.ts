@@ -10,8 +10,18 @@ export const SkillsContainer = styled.section`
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     align-items: start;
-    gap: 32px;
-    /* justify-content: space-between;
-    position: relative;  */
+  }
+
+  h1 {
+    margin-bottom: 2.5rem;
+    &::after {
+      content: ' />';
+      color: ${({ theme }) => theme.colors['brand-green']};
+    }
+
+    &::before {
+      content: '<';
+      color: ${({ theme }) => theme.colors['brand-green']};
+    }
   }
 `

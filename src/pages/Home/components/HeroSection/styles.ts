@@ -9,7 +9,7 @@ export const HeroSectionContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 14.75rem;
+    padding-top: 14rem;
     padding-bottom: 10.5rem;
   }
 
