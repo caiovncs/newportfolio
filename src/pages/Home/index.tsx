@@ -1,11 +1,11 @@
-import React from 'react'
 import { HeaderMain } from './components/HeaderMain'
 import { Links } from './components/Links'
 import { AboutMe } from './components/AboutMe'
 import { Skills } from './components/Skills'
 import { Contact } from './components/Contact'
 import { HeroSection } from './components/HeroSection'
-import { Projects } from '../../components/Projects'
+import { ProjectsHome } from './components/ProjectsHome'
+import { Footer } from './components/Footer'
 
 export function Home() {
   return (
@@ -15,8 +15,9 @@ export function Home() {
       <Links />
       <AboutMe />
       <Skills />
-      <Projects />
+      <ProjectsHome />
       <Contact />
+      <Footer />
     </>
   )
 }

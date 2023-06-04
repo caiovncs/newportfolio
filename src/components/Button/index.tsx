@@ -9,8 +9,14 @@ interface ButtonProps {
   downloadPdf?: boolean
   children: ReactNode
 }
-export function Button({ children, url, downloadPdf, ...props }: ButtonProps) {
-  function handleOpenLinkAndDownload() {
+export function Button({
+  children,
+  url,
+  downloadPdf,
+  submit,
+  ...props
+}: ButtonProps) {
+  function handleClickActions() {
     if (url) {
       window.open(url, '_blank')
     } else if (downloadPdf) {
@@ -23,7 +29,11 @@ export function Button({ children, url, downloadPdf, ...props }: ButtonProps) {
     }
   }
   return (
-    <ButtonContainer {...props} onClick={handleOpenLinkAndDownload}>
+    <ButtonContainer
+      {...props}
+      onClick={handleClickActions}
+      type={submit ? 'submit' : 'button'}
+    >
       {children}
     </ButtonContainer>
   )

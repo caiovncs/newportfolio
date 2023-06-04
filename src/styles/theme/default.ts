@@ -10,7 +10,7 @@ export const defaultTheme = {
   },
   textSizes: {
     'title-xl': '2.75rem',
-    'title-l': '2.375rem',
+    'title-l': '2rem',
     'title-m': '1.25rem',
     'regular-l': '1.125rem',
     'regular-m': '1rem',

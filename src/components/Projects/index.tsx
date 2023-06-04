@@ -1,26 +1,43 @@
 import { projects } from '../../data/projects'
 import { ProjectCard } from '../ProjectCard'
-import { TitleText } from '../Typography'
 import { ProjectsContainer } from './styles'
-interface phprops {
-  ph?: boolean
+
+interface ProjectsProp {
+  home?: boolean
 }
-export function Projects({ph}: phprops) {
+
+export function Projects({ home }: ProjectsProp) {
+  const projectsHome = projects.slice(3, 6)
+
   return (
     <ProjectsContainer>
-      <div className="container">
-        <TitleText size="l">ProjetosDeEstudo</TitleText>
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              key={project.id}
-              name={project.name}
-              description={project.description}
-              img={project.img}
-            />
-          )
-        })}
-      </div>
+      {home
+        ? projectsHome.map((project) => {
+            return (
+              <ProjectCard
+                key={project.id}
+                name={project.name}
+                description={project.description}
+                img={project.img}
+                techs={project.techs}
+                id={project.id}
+                links={project.links}
+              />
+            )
+          })
+        : projects.map((project) => {
+            return (
+              <ProjectCard
+                key={project.id}
+                name={project.name}
+                description={project.description}
+                img={project.img}
+                techs={project.techs}
+                id={project.id}
+                links={project.links}
+              />
+            )
+          })}
     </ProjectsContainer>
   )
 }

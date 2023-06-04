@@ -21,7 +21,7 @@ export const projects = [
       'Context API',
     ],
     links: ['www.github.com/projketo1', 'www.vercel.com/projeto1'],
-    img: ['todo.png'],
+    img: 'todo.png',
   },
   {
     id: 2,
@@ -30,16 +30,16 @@ export const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
     techs: ['react', 'Css modules'],
     links: ['www.github.com/projketo1', 'https://todo-caiovncs.vercel.app/'],
-    img: ['todo.png'],
+    img: 'todo.png',
   },
   {
     id: 4,
     name: 'Spotify',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur',
     techs: ['Tailwind css'],
     links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
-    img: ['spotify.png'],
+    img: 'spotify.png',
   },
   {
     id: 5,
@@ -47,8 +47,11 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
     techs: ['Html', 'Css', 'Javascript'],
-    links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
-    img: ['animaisfantasticos.png'],
+    links: [
+      'https://www.github.com/projketo1',
+      'https://spotify-caiovncs.vercel.app/',
+    ],
+    img: 'animaisfantasticos.png',
   },
   {
     id: 6,
@@ -57,7 +60,7 @@ export const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
     techs: ['Html', 'Css', 'Javascript'],
     links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
-    img: ['calculadoradegorjeta.png'],
+    img: 'calculadoradegorjeta.png',
   },
   {
     id: 6,
@@ -66,7 +69,7 @@ export const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
     techs: ['Html', 'Css', 'Javascript'],
     links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
-    img: ['encurtadordeurl.png'],
+    img: 'encurtadordeurl.png',
   },
   {
     id: 6,
@@ -75,6 +78,6 @@ export const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
     techs: ['Html', 'Css', 'Javascript'],
     links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
-    img: ['geradordesenha.png'],
+    img: 'geradordesenha.png',
   },
 ]

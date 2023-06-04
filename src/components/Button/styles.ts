@@ -35,22 +35,15 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
       padding: 0.75rem 2.5rem 0.75rem 3rem;
       transition: 0.2s ease-in;
       :hover {
-        /* background-color: ${({ theme }) => theme.colors['base-black']}; */
         background-color: ${({ theme }) => theme.colors['brand-purple']};
         color: ${({ theme }) => theme.colors['base-black']};
       }
     `}
 
-  ${({ submit }) =>
-    submit &&
-    css`
-      type: submit;
-    `}
-
     ${({ small }) =>
     small &&
     css`
-      padding: 1.5rem 0.5rem;
+      padding: 0.5rem 1.5rem;
       font-size: ${({ theme }) => theme.textSizes['regular-s']};
     `}
 `

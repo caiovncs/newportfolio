@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../../../../assets/logo.svg'
 import { HeaderMainContainer, NavContainer } from './styles'
 import { RegularText } from '../../../../components/Typography'
@@ -22,8 +21,8 @@ export function HeaderMain() {
           <RegularText as="a" href="#projetos" color="nav-color">
             Projetos
           </RegularText>
-          <RegularText as="a" href="#contato" color="nav-color">
-            Contato
+          <RegularText as="a" href="#contatos" color="nav-color">
+            Contatos
           </RegularText>
         </NavContainer>
       </div>

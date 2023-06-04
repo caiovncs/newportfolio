@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
   }
 
   a {
@@ -20,4 +21,20 @@ export const GlobalStyle = createGlobalStyle`
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: ${({ theme }) => theme.colors['brand-purple']};
+}
+
+body::-webkit-scrollbar-track {
+  background-color: ${({ theme }) => theme.colors['base-black']};
+
+}
+
+
 `

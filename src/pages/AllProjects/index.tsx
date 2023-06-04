@@ -1,5 +1,11 @@
-import React from 'react'
+import { HeaderProjects } from './components/HeaderProjects'
+import { ProjectsAll } from './components/ProjectsAll'
 
 export function AllProjects() {
-  return <div>index</div>
+  return (
+    <>
+      <HeaderProjects />
+      <ProjectsAll />
+    </>
+  )
 }
