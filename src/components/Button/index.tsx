@@ -19,7 +19,8 @@ export function Button({
   function handleClickActions() {
     if (url) {
       window.open(url, '_blank')
-    } else if (downloadPdf) {
+    }
+    if (downloadPdf) {
       const link = document.createElement('a')
       link.href = '/src/assets/caiovinicius-cv.pdf'
       link.setAttribute('download', 'caiovinicius-cv.pdf')

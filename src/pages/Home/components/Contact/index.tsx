@@ -9,15 +9,14 @@ import whatsapp from '../../../../assets/Icons/whatsapp.svg'
 import email from '../../../../assets/Icons/email.svg'
 import { Button } from '../../../../components/Button'
 import { PaperPlaneRight } from '@phosphor-icons/react'
-import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 
 export function Contact() {
-  function handleSubmit(e: any) {
-    e.preventDefault()
+  const { register, reset, handleSubmit } = useForm()
+
+  function handleSendForm() {
+    reset()
   }
-
-  const [text, setText] = useState([nome: '', email: '', mensagem:""])
-
   return (
     <ContactContainer id="contatos">
       <div className="container">
@@ -53,10 +52,22 @@ export function Contact() {
 
         <span></span>
 
-        <FormFooterContainer onSubmit={handleSubmit}>
-          <input type="text" placeholder="Nome" name="nome" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea placeholder="Mensagem" name="mensagem" />
+        <FormFooterContainer onSubmit={handleSubmit(handleSendForm)}>
+          <input
+            placeholder="Nome"
+            type="text"
+            {...register('nome', { required: 'Insira seu nome' })}
+          />
+
+          <input
+            placeholder="Email"
+            type="email"
+            {...register('email', { required: 'Insira seu email' })}
+          />
+          <textarea
+            placeholder="Mensagem"
+            {...register('mensagem', { required: 'Insira a mensagem' })}
+          />
           <Button submit>
             Enviar mensagem <PaperPlaneRight size={16} />
           </Button>
