@@ -8,9 +8,20 @@ export const HeaderProjectsContainer = styled.header`
   position: fixed;
   z-index: 5;
 
+  @media (max-width: 767px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  img {
+    @media (max-width: 767px) {
+      width: 72px;
+    }
   }
 `

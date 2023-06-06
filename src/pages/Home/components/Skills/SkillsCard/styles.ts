@@ -12,7 +12,6 @@ export const SkillCardContainer = styled.div`
   width: 242px;
   height: 102px;
   user-select: none;
-
   &:hover::before {
     height: 100%;
   }
@@ -43,6 +42,10 @@ export const SkillsCardsStyle = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 2.5rem;
   flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    gap: 1.25rem;
+  }
 `

@@ -12,6 +12,7 @@ export const defaultTheme = {
     'title-xl': '2.75rem',
     'title-l': '2rem',
     'title-m': '1.25rem',
+    'title-mobile': '1.5rem',
     'regular-l': '1.125rem',
     'regular-m': '1rem',
     'regular-s': '0.875rem',

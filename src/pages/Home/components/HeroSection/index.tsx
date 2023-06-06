@@ -17,7 +17,7 @@ export function HeroSection() {
           Sinta-se à vontade para explorar e conhecer mais sobre minhas
           habilidades.
         </RegularText>
-        <Button>
+        <Button scrollToForm>
           Entrar em contato
           <ArrowRight size={16} />
         </Button>

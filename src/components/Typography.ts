@@ -6,7 +6,7 @@ interface RegularTextProps {
 }
 
 interface TitleTextProps {
-  size?: 'm' | 'l' | 'xl'
+  size?: 'm' | 'l' | 'xl' | 'mobile'
   color?: 'white' | 'black'
 }
 

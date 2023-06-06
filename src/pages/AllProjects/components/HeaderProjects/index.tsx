@@ -12,7 +12,7 @@ export function HeaderProjects() {
         <NavLink to="/">
           <Button small>
             <ArrowUpLeft size={16} />
-            Voltar para home
+            Voltar
           </Button>
         </NavLink>
       </div>

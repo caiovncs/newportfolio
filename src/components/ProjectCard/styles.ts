@@ -9,6 +9,11 @@ export const ProjectCardContainer = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors['base-black']};
   margin-bottom: 2.5rem;
 
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   &:last-child {
     padding-bottom: 0;
     border-bottom: none;
@@ -18,6 +23,13 @@ export const ProjectCardContainer = styled.div`
   img {
     width: 360px;
     height: 210px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+      max-width: 360px;
+      max-height: 210px;
+    }
   }
 
   button {
@@ -27,8 +39,14 @@ export const ProjectCardContainer = styled.div`
 
 export const TechsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
+  margin-top: 1.75rem;
 
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
   span {
     font-size: 0.75rem;
     border: 1px solid ${({ theme }) => theme.colors['brand-green']};
@@ -42,15 +60,17 @@ export const ProjectCardTexts = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 767px) {
+    align-items: center;
+  }
+
   h1 {
     margin-bottom: 0.5rem;
   }
 
   p {
-    margin-bottom: 1.25rem;
-  }
-
-  span {
-    margin-bottom: 1.75rem;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 `

@@ -10,6 +10,12 @@ export const SkillsContainer = styled.section`
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     align-items: start;
+
+    @media (max-width: 767px) {
+      align-items: center;
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+    }
   }
 
   h1 {
@@ -22,6 +28,11 @@ export const SkillsContainer = styled.section`
     &::before {
       content: '<';
       color: ${({ theme }) => theme.colors['brand-green']};
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 1.5rem;
+      font-size: ${({ theme }) => theme.textSizes['title-mobile']};
     }
   }
 `

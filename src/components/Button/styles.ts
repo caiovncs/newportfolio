@@ -17,6 +17,11 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   cursor: pointer;
   border: none;
 
+  &:disabled {
+    pointer-events: none;
+    opacity: 70%;
+  }
+
   ${({ secondary }) =>
     !secondary &&
     css`

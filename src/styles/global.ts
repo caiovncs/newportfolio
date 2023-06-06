@@ -33,8 +33,9 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background-color: ${({ theme }) => theme.colors['base-black']};
-
 }
 
-
+::selection {
+  background-color: ${({ theme }) => theme.colors['brand-purple']};
+}
 `

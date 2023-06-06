@@ -9,8 +9,7 @@ export const HeroSectionContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 14rem;
-    padding-bottom: 10.5rem;
+    height: 94vh;
   }
 
   h1 {
@@ -18,6 +17,11 @@ export const HeroSectionContainer = styled.section`
     text-align: center;
     line-height: 100%;
     margin-bottom: 1.25rem;
+
+    @media (max-width: 767px) {
+      font-size: ${({ theme }) => theme.textSizes['title-l']};
+      word-break: break-all;
+    }
   }
 
   .gradient {
@@ -34,6 +38,7 @@ export const HeroSectionContainer = styled.section`
 
   p {
     margin-bottom: 2rem;
+    text-align: center;
 
     &:first-child {
       margin-bottom: 0.5rem;
@@ -42,6 +47,12 @@ export const HeroSectionContainer = styled.section`
         font-weight: 500;
         color: white;
       }
+    }
+  }
+
+  p:first-child {
+    @media (max-width: 767px) {
+      font-size: ${({ theme }) => theme.textSizes['regular-m']};
     }
   }
 `
