@@ -6,7 +6,6 @@ interface SkillCardProps {
   image: string
   description: string
 }
-
 export function SkillCard({ name, image, description }: SkillCardProps) {
   return (
     <SkillCardContainer>
@@ -16,7 +15,7 @@ export function SkillCard({ name, image, description }: SkillCardProps) {
       <RegularText size="s" color="gray">
         {description}
       </RegularText>
-      <img src={`../src/assets/TechsImages/${image}`} alt={image} />
+      <img src={`/TechsImages/${image}`} alt={image} />
     </SkillCardContainer>
   )
 }

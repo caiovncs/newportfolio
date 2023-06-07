@@ -7,7 +7,7 @@ export const skills = [
   },
   {
     id: 2,
-    image: 'Typescript.svg',
+    image: 'typescript.svg',
     name: 'Typescript',
     description: 'Superset do javaScript',
   },
