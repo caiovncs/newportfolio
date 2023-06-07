@@ -24,8 +24,6 @@ export function Contact() {
 
   const form = useRef<HTMLFormElement>(null)
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
-  const [error, setError] = useState(false)
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -42,12 +40,10 @@ export function Contact() {
       )
       .then(
         () => {
-          setSuccess(true)
           reset()
           setLoading(false)
         },
         (error) => {
-          setError(true)
           setLoading(false)
           console.log(error)
         },
