@@ -16,7 +16,10 @@ export function SkillCard({ name, image, description }: SkillCardProps) {
       <RegularText size="s" color="gray">
         {description}
       </RegularText>
-      <img src={`./src/assets/TechsImages/${image}`} alt={image} />
+      <img
+        src={`../../../../../../src/assets/TechsImages/${image}`}
+        alt={image}
+      />
     </SkillCardContainer>
   )
 }
