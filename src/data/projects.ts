@@ -3,53 +3,68 @@ export const projects = [
     id: 1,
     name: 'Página de produto',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+      'Desafio da página frontend mentor, onde era proposto desenvolver uma pagina de produto com carrinho e deixar mais próximo possivel do layout fornecido.',
     techs: ['react', 'typescript', 'styled-components'],
-    links: ['www.github.com/projketo1', 'www.vercel.com'],
-    img: 'todo.png',
+    links: ['www.google.com', 'www.google.com'],
+    img: 'paginadeproduto.png',
   },
   {
     id: 2,
     name: 'Coffee delivery',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
-    techs: [
-      'react',
-      'typescript',
-      'styled-components',
-      'react hook form',
-      'Context API',
+      'Desafio proposto no fim do modulo 2 do ignite da rocketseat, pude colocar em prática alguns conceitos de react hook form, validação com zod, styled-components, react router para navegação interna, etc',
+    techs: ['react', 'typescript', 'styled-components'],
+    links: [
+      'https://www.google.com',
+      'https://github.com/caiovncs/coffee-delivery',
     ],
-    links: ['www.github.com/projketo1', 'www.vercel.com/projeto1'],
-    img: 'todo.png',
+    img: 'coffeedelivery.png',
   },
   {
-    id: 2,
-    name: 'To Do',
+    id: 3,
+    name: 'Portfolio',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
-    techs: ['react', 'Css modules'],
-    links: ['www.github.com/projketo1', 'https://todo-caiovncs.vercel.app/'],
+      'A finalizade dele é apresentar os projetos que desenvolvi, fiz a UI no figma e durante o desenvolvimento tive o primeiro contato com framer motion para criar animações',
+    techs: ['react', 'typescript', 'framer motion', 'styled-components'],
+    links: [
+      'https://github.com/caiovncs/newportfolio',
+      'https://caiovinicius.codes',
+    ],
+    img: 'portfolio.png',
+  },
+  {
+    id: 43,
+    name: 'To-Do',
+    description:
+      'Meu primeiro projeto usando react, o todo List permite criar e excluir tarefas, além de marca-las como concluídas',
+    techs: ['React', 'Css'],
+    links: [
+      'https://todo-caiovncs.vercel.app/',
+      'https://github.com/caiovncs/todo',
+    ],
     img: 'todo.png',
   },
   {
     id: 4,
-    name: 'Spotify',
+    name: 'Página do Spotify',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur',
+      'O Tailwind foi a escolha para estilizar a página, oferecendo uma abordagem rápida e eficiente. Pude criar uma interface estilizada e responsiva, sem a necessidade de escrever CSS personalizado. ',
     techs: ['Tailwind css'],
-    links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
+    links: [
+      'https://github.com/caiovncs/spotify',
+      'https://spotify-caiovncs.vercel.app/',
+    ],
     img: 'spotify.png',
   },
   {
     id: 5,
     name: 'Animais Fantásticos',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+      'Esse projeto foi desenvolvido no curso de javascript completo da origamid, utilizamos JavaScript para adicionar elementos interativos, como FAQ, animação ao scroll e animações suaves.',
     techs: ['Html', 'Css', 'Javascript'],
     links: [
-      'https://www.github.com/projketo1',
-      'https://spotify-caiovncs.vercel.app/',
+      'https://github.com/caiovncs/animais-fantasticos',
+      'https://caiovncs-animais-fantasticos.netlify.app/',
     ],
     img: 'animaisfantasticos.png',
   },
@@ -57,27 +72,35 @@ export const projects = [
     id: 6,
     name: 'Calculadora de gorjetas',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+      'Desenvolvi um projeto de calculadora de gorjeta, uma aplicação simples. Os usuários podem inserir o valor total da conta e selecionar a porcentagem de gorjeta desejada, obtendo o valor total a ser pago, incluindo a gorjeta. ',
     techs: ['Html', 'Css', 'Javascript'],
-    links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
+    links: [
+      'https://github.com/caiovncs/calculadora-gorjeta',
+      'https://caiovncs-calculadora-gorjeta.netlify.app/',
+    ],
     img: 'calculadoradegorjeta.png',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Encurtador de url',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+    description: '(em desenvolvimento)',
     techs: ['Html', 'Css', 'Javascript'],
-    links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
+    links: [
+      'https://github.com/caiovncs/encurtador-url',
+      'https://caiovncs-urlshorten.netlify.app/',
+    ],
     img: 'encurtadordeurl.png',
   },
   {
-    id: 6,
+    id: 8,
     name: 'Gerador de senha',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum unde error hic, nulla consequuntur quae ea ex deserunt doloremque vero magni et. Ducimus est quaerat at, nisi facere quidem!',
+      'Uma aplicação que gera senhas aleatórias. Os usuários podem especificar o comprimento da senha e selecionar as opções desejadas, como letras maiúsculas, letras minúsculas, números e caracteres especiais.',
     techs: ['Html', 'Css', 'Javascript'],
-    links: ['www.github.com/projketo1', 'https://spotify-caiovncs.vercel.app/'],
+    links: [
+      'https://github.com/caiovncs/gerador-de-senha',
+      'https://caiovncs-gerador-senha.netlify.app/',
+    ],
     img: 'geradordesenha.png',
   },
 ]

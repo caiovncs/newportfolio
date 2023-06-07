@@ -7,7 +7,7 @@ interface ProjectsProp {
 }
 
 export function Projects({ home }: ProjectsProp) {
-  const projectsHome = projects.slice(3, 6)
+  const projectsHome = projects.slice(1, 4)
 
   return (
     <ProjectsContainer>
