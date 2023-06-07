@@ -2,10 +2,9 @@ export const projects = [
   {
     id: 1,
     name: 'Página de produto',
-    description:
-      'Desafio da página frontend mentor, onde era proposto desenvolver uma pagina de produto com carrinho e deixar mais próximo possivel do layout fornecido.',
+    description: 'Em breve.',
     techs: ['react', 'typescript', 'styled-components'],
-    links: ['www.google.com', 'www.google.com'],
+    links: ['https://www.caiovinicius.codes', 'https://www.caiovinicius.codes'],
     img: 'paginadeproduto.png',
   },
   {
@@ -15,8 +14,8 @@ export const projects = [
       'Desafio proposto no fim do modulo 2 do ignite da rocketseat, pude colocar em prática alguns conceitos de react hook form, validação com zod, styled-components, react router para navegação interna, etc',
     techs: ['react', 'typescript', 'styled-components'],
     links: [
-      'https://www.google.com',
       'https://github.com/caiovncs/coffee-delivery',
+      'https://www.caiovinicius.codes',
     ],
     img: 'coffeedelivery.png',
   },
@@ -24,8 +23,8 @@ export const projects = [
     id: 3,
     name: 'Portfolio',
     description:
-      'A finalizade dele é apresentar os projetos que desenvolvi, fiz a UI no figma e durante o desenvolvimento tive o primeiro contato com framer motion para criar animações',
-    techs: ['react', 'typescript', 'framer motion', 'styled-components'],
+      'A finalizade dele é apresentar os projetos que desenvolvi, e tecnologias que uso diariamente, a ui foi criada no figma e no desenvolvimento foi usado react',
+    techs: ['react', 'typescript', 'styled-components'],
     links: [
       'https://github.com/caiovncs/newportfolio',
       'https://caiovinicius.codes',
