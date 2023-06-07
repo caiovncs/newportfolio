@@ -26,7 +26,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <ProjectCardContainer>
-      <img src={`../../../src/assets/ProjectsImages/${img}`} alt="" />
+      <img src={`../src/assets/ProjectsImages/${img}`} alt="" />
 
       <ProjectCardTexts>
         <TitleText>{name}</TitleText>
