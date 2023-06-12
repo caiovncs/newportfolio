@@ -29,7 +29,7 @@ export function Button({
     }
     if (downloadPdf) {
       const link = document.createElement('a')
-      link.href = '/src/assets/caiovinicius-cv.pdf'
+      link.href = '/caiovinicius-cv.pdf'
       link.setAttribute('download', 'caiovinicius-cv.pdf')
       document.body.appendChild(link)
       link.click()

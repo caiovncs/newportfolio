@@ -21,8 +21,8 @@ export function AboutMe() {
             estudo. No momento meu foco é me especializar em React e Typescript.
           </RegularText>
           <Button downloadPdf>
-            Baixar CV
             <DownloadSimple size={18} />
+            Baixar CV
           </Button>
         </TextsAbout>
         <img src={card} alt="card com informações pessoais" />
