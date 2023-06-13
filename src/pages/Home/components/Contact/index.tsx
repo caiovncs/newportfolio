@@ -63,7 +63,7 @@ export function Contact() {
   }
 
   return (
-    <ContactContainer id="contatos">
+    <ContactContainer id="Contatos">
       <div className="container">
         <InfosContactContainer>
           <TitleText size="l">Contatos</TitleText>

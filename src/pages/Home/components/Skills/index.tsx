@@ -6,7 +6,7 @@ import { SkillsCardsStyle } from './SkillsCard/styles'
 
 export function Skills() {
   return (
-    <SkillsContainer id="conhecimentos">
+    <SkillsContainer id="Conhecimentos">
       <div className="container">
         <TitleText size="l" color="white">
           Conhecimentos

@@ -6,7 +6,7 @@ import { DownloadSimple } from '@phosphor-icons/react'
 
 export function AboutMe() {
   return (
-    <AboutMeContainer id="sobre">
+    <AboutMeContainer id="Sobre">
       <div className="container">
         <TextsAbout>
           <TitleText size="l" color="black">

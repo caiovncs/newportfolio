@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 
 export function ProjectsHome() {
   return (
-    <ProjectsHomeContainer id="projetos">
+    <ProjectsHomeContainer id="Projetos">
       <div className="container">
         <TitleText size="l">ProjetosDeEstudo</TitleText>
         <Projects home />

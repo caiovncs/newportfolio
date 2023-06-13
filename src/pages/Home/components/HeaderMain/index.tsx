@@ -2,6 +2,7 @@ import logo from '../../../../assets/logo.svg'
 import { HeaderMainContainer, MenuMobile, NavContainer } from './styles'
 import { RegularText } from '../../../../components/Typography'
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 
 export function HeaderMain() {
   const [activeMenuMobile, setActiveMenuMobile] = useState(false)
@@ -9,6 +10,18 @@ export function HeaderMain() {
   function handleActiveMenuMobile() {
     setActiveMenuMobile(!activeMenuMobile)
   }
+
+  function itemCloseMenuMobileOnClick() {
+    setActiveMenuMobile(false)
+  }
+
+  const navItensNames = [
+    'Início',
+    'Sobre',
+    'Conhecimentos',
+    'Projetos',
+    'Contatos',
+  ]
 
   return (
     <HeaderMainContainer activeMenuMobile={activeMenuMobile}>
@@ -18,70 +31,34 @@ export function HeaderMain() {
         <span className="hamburguer" onClick={handleActiveMenuMobile}></span>
         {activeMenuMobile && (
           <MenuMobile>
-            <RegularText
-              as="a"
-              href="#"
-              color="white"
-              size="l"
-              onClick={handleActiveMenuMobile}
-            >
-              Início
-            </RegularText>
-            <RegularText
-              as="a"
-              href="#sobre"
-              color="white"
-              size="l"
-              onClick={handleActiveMenuMobile}
-            >
-              Sobre
-            </RegularText>
-            <RegularText
-              as="a"
-              href="#conhecimentos"
-              color="white"
-              size="l"
-              onClick={handleActiveMenuMobile}
-            >
-              Conhecimentos
-            </RegularText>
-            <RegularText
-              as="a"
-              href="#projetos"
-              color="white"
-              size="l"
-              onClick={handleActiveMenuMobile}
-            >
-              Projetos
-            </RegularText>
-            <RegularText
-              as="a"
-              href="#contatos"
-              color="white"
-              size="l"
-              onClick={handleActiveMenuMobile}
-            >
-              Contatos
-            </RegularText>
+            {navItensNames.map((name: string) => {
+              return (
+                <RegularText key={name} color="white" size="l">
+                  <Link
+                    to={name}
+                    smooth={true}
+                    offset={-40}
+                    duration={0}
+                    onClick={itemCloseMenuMobileOnClick}
+                  >
+                    {name}
+                  </Link>
+                </RegularText>
+              )
+            })}
           </MenuMobile>
         )}
 
         <NavContainer>
-          <RegularText as="a" href="#" color="nav-color">
-            Início
-          </RegularText>
-          <RegularText as="a" href="#sobre" color="nav-color">
-            Sobre
-          </RegularText>
-          <RegularText as="a" href="#conhecimentos" color="nav-color">
-            Conhecimentos
-          </RegularText>
-          <RegularText as="a" href="#projetos" color="nav-color">
-            Projetos
-          </RegularText>
-          <RegularText as="a" href="#contatos" color="nav-color">
-            Contatos
-          </RegularText>
+          {navItensNames.map((name: string) => {
+            return (
+              <RegularText key={name} color="nav-color">
+                <Link to={name} smooth={true} offset={-20} duration={0}>
+                  {name}
+                </Link>
+              </RegularText>
+            )
+          })}
         </NavContainer>
       </div>
     </HeaderMainContainer>

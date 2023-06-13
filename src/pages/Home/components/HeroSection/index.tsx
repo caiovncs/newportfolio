@@ -2,11 +2,11 @@ import { ArrowRight } from '@phosphor-icons/react'
 import { Button } from '../../../../components/Button'
 import { RegularText, TitleText } from '../../../../components/Typography'
 import { HeroSectionContainer } from './styles'
-import { TextAnimate } from '../AnimateText,'
+import { TextAnimate } from '../AnimateText'
 
 export function HeroSection() {
   return (
-    <HeroSectionContainer>
+    <HeroSectionContainer id="Início">
       <div className="container">
         <RegularText size="l" color="gray">
           Olá, eu sou <span>Caio Vinícius</span>

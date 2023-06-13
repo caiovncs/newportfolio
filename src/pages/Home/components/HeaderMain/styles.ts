@@ -91,6 +91,7 @@ export const NavContainer = styled.nav`
     letter-spacing: 0.5px;
     padding: 0.5rem 0.25rem;
     transition: transform 0.3s ease-in;
+    cursor: pointer;
   }
 
   a::before {
@@ -120,17 +121,18 @@ export const MenuMobile = styled.nav`
   @media (max-width: 1024px) {
     position: absolute;
     right: 0;
-    top: 68px;
+    top: 65px;
     background-color: ${({ theme }) => theme.colors['base-black-light']};
     border-left: 2px solid ${({ theme }) => theme.colors['brand-purple']};
     padding: 1rem;
     z-index: 10;
     animation: mobileAnimation 0.3s forwards;
   }
-  a {
+  p {
     display: block;
     padding: 0.7rem;
     font-size: ${({ theme }) => theme.textSizes['regular-l']};
     color: ${({ theme }) => theme.colors['base-white']};
+    cursor: pointer;
   }
 `

@@ -38,8 +38,8 @@ export const projects = [
       'Meu primeiro projeto usando react, o todo List permite criar e excluir tarefas, além de marca-las como concluídas',
     techs: ['React', 'Css'],
     links: [
-      'https://todo-caiovncs.vercel.app/',
       'https://github.com/caiovncs/todo',
+      'https://todo-caiovncs.vercel.app/',
     ],
     img: 'todo.png',
   },
