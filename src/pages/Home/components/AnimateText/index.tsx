@@ -66,12 +66,15 @@ export function TextAnimate({ text }: TextAnimateProps) {
         }
       }
 
-      if (element) {
-        element.innerHTML = output
+      if (elementRef.current) {
+        elementRef.current.innerHTML = output
       }
 
       if (completedCount === queue.length) {
-        resolve()
+        cancelAnimationFrame(frameRequest)
+        if (resolve) {
+          resolve() // Resolvendo a Promise quando a animação é concluída
+        }
       } else {
         frameRequest = requestAnimationFrame(update)
         frame++
