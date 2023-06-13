@@ -28,10 +28,6 @@ export function TextAnimate({ text }: TextAnimateProps) {
     const currentText = element.innerText
     const maxLength = Math.max(currentText.length, text.length)
 
-    const promise = new Promise<void>((res) => {
-      resolve = res
-    })
-
     queue = []
     for (let i = 0; i < maxLength; i++) {
       const from = currentText[i] || ''
