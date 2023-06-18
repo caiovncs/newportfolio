@@ -3,6 +3,7 @@ import { HeaderMainContainer, MenuMobile, NavContainer } from './styles'
 import { RegularText } from '../../../../components/Typography'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
+import { motion } from 'framer-motion'
 
 export function HeaderMain() {
   const [activeMenuMobile, setActiveMenuMobile] = useState(false)
@@ -25,7 +26,12 @@ export function HeaderMain() {
 
   return (
     <HeaderMainContainer activeMenuMobile={activeMenuMobile}>
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
         <img src={logo} alt="logo" />
 
         <span className="hamburguer" onClick={handleActiveMenuMobile}></span>
@@ -60,7 +66,7 @@ export function HeaderMain() {
             )
           })}
         </NavContainer>
-      </div>
+      </motion.div>
     </HeaderMainContainer>
   )
 }

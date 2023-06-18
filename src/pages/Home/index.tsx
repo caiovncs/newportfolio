@@ -18,7 +18,7 @@ export function Home() {
       <Skills />
       <ProjectsHome />
       <Contact />
-      <Footer /> 
+      <Footer />
     </FocusProvider>
   )
 }

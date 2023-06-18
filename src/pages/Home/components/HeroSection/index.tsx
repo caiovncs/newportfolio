@@ -3,11 +3,17 @@ import { Button } from '../../../../components/Button'
 import { RegularText, TitleText } from '../../../../components/Typography'
 import { HeroSectionContainer } from './styles'
 import { TextAnimate } from '../AnimateText'
+import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
     <HeroSectionContainer id="Início">
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <RegularText size="l" color="gray">
           Olá, eu sou <span>Caio Vinícius</span>
         </RegularText>
@@ -22,7 +28,7 @@ export function HeroSection() {
           Entrar em contato
           <ArrowRight size={16} />
         </Button>
-      </div>
+      </motion.div>
     </HeroSectionContainer>
   )
 }

@@ -25,7 +25,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   ${({ secondary }) =>
     !secondary &&
     css`
-      transition: 0.2s ease-in;
+      transition: 0.2s;
       :hover {
         background-color: #a47fdb;
       }

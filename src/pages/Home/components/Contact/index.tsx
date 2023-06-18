@@ -13,6 +13,7 @@ import { useForm } from 'react-hook-form'
 import { FormEvent, useContext, useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { FocusContext } from '../../../../context/FocusContext'
+import { motion } from 'framer-motion'
 
 export function Contact() {
   const { register, reset, handleSubmit, watch, setFocus } = useForm()
@@ -65,8 +66,21 @@ export function Contact() {
   return (
     <ContactContainer id="Contatos">
       <div className="container">
-        <InfosContactContainer>
-          <TitleText size="l">Contatos</TitleText>
+        <InfosContactContainer
+          as={motion.div}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <TitleText
+            size="l"
+            as={motion.h1}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
+            Contatos
+          </TitleText>
           <RegularText color="gray">
             Obrigado por visitar meu portfólio, aguardo ansiosamente por sua
             mensagem!
@@ -99,6 +113,10 @@ export function Contact() {
         <FormFooterContainer
           onSubmit={handleSubmit(handleSendForm) && sendEmail}
           ref={form}
+          as={motion.form}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
         >
           <input
             placeholder="Nome"

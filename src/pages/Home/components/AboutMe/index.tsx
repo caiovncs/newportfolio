@@ -3,13 +3,26 @@ import { AboutMeContainer, TextsAbout } from './styles'
 import card from '../../../../assets/card.png'
 import { Button } from '../../../../components/Button'
 import { DownloadSimple } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
 
 export function AboutMe() {
   return (
     <AboutMeContainer id="Sobre">
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <TextsAbout>
-          <TitleText size="l" color="black">
+          <TitleText
+            size="l"
+            color="black"
+            as={motion.h1}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
             SobreMim
           </TitleText>
           <RegularText color="black-light" size="l">
@@ -26,7 +39,7 @@ export function AboutMe() {
           </Button>
         </TextsAbout>
         <img src={card} alt="card com informações pessoais" />
-      </div>
+      </motion.div>
     </AboutMeContainer>
   )
 }
