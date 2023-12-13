@@ -26,7 +26,7 @@ export function AboutMe() {
             SobreMim
           </TitleText>
           <RegularText color="black-light" size="l">
-            Sou aluno do 2º período de Análise e Desenvolvimento de Sistemas no
+            Sou aluno do 4º período de Análise e Desenvolvimento de Sistemas no
             IFPE. Meu objetivo é me tornar um desenvolvedor de software completo
             e oferecer soluções criativas e eficientes para problemas do mundo
             real. Estou em busca da minha primeira oportunidade profissional na

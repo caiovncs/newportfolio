@@ -30,7 +30,7 @@ export function Button({
     if (downloadPdf) {
       const link = document.createElement('a')
       link.href = '/caiovinicius-cv.pdf'
-      link.setAttribute('download', 'caiovinicius-cv.pdf')
+      link.setAttribute('download', 'caiovinicius-cv')
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
